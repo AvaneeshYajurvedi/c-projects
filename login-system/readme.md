@@ -1,4 +1,4 @@
-🔐 Interactive Adaptive Login Security System (C)
+# **🔐 Interactive Adaptive Login Security System (C)**
 
 A lightweight, interactive file-based login system written in C.
 Designed to demonstrate real-world defensive security concepts, including:
@@ -11,7 +11,7 @@ Behavioral logging of user password guesses
 
 This system is educational and shows how login systems retain memory and slow attackers.
 
-🧠 Key Features
+## **🧠 Key Features**
 🖊️ Interactive Password Input
 
 Users type the password at runtime when prompted
@@ -20,13 +20,13 @@ Input is read securely using fgets()
 
 Newline characters are stripped automatically
 
-🔁 Persistent State
+## **🔁 Persistent State**
 
 Failed attempts and the timestamp of the last attempt are stored in state.txt
 
 Attempts persist even if the program restarts
 
-⏳ Cooldown Enforcement
+## **⏳ Cooldown Enforcement**
 
 After MAX_ATTEMPTS failed attempts, login is blocked temporarily
 
@@ -34,17 +34,17 @@ Cooldown duration is defined in COOLDOWN_SECONDS
 
 Attempts reset automatically after cooldown expires
 
-📝 Attempt Logging
+## **📝 Attempt Logging**
 
 Every incorrect password is logged to attempts.log
 
 Logs include timestamps and the exact input the user tried
 
-♻️ Safe Reset
+## **♻️ Safe Reset**
 
 Correct password resets attempts and cooldown, giving a fresh start
 
-⚙️ Configuration
+## **⚙️ Configuration**
 
 Inside login.c:
 
@@ -85,7 +85,7 @@ Type a password and press Enter
 
 The program will respond with success or failure and track attempts
 
-📊 Example Behavior
+## **📊 Example Behavior**
 
 Run sequence:
 
@@ -111,7 +111,7 @@ state.txt example after cooldown:
 
 3 1710744123
 
-⚠️ Security Notice
+## **⚠️ Security Notice**
 
 This project logs raw password input for educational purposes only
 
@@ -125,7 +125,7 @@ Hash sensitive data
 
 Follow legal and ethical guidelines
 
-🎯 Learning Outcomes
+## **🎯 Learning Outcomes**
 
 Understanding persistence in security systems
 
@@ -135,7 +135,7 @@ How logging reveals attacker behavior
 
 How design decisions affect system security
 
-🧪 Ideas for Extension
+## **🧪 Ideas for Extension**
 
 Hide input using terminal password masking
 
@@ -149,7 +149,7 @@ Multi-user support
 
 Attack pattern visualization
 
-🧠 Philosophy
+## **🧠 Philosophy**
 
 Observing user behavior, remembering past failures, and enforcing cooldowns are simple yet powerful strategies.
 
